@@ -1,6 +1,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -66,9 +66,13 @@ const config = {
                         attrs: ['img:src','link:href','source:srcset']
                     }
                 }
+                {
+                    test: /\.css$/,
+                    use: ["style-loader", "css-loader", "postcss-loader"]
+                  }
             },
             {
-                test: /\.(svg|png|jpg|eot|gif)$/,
+                test: /\.(svg|png|jpg|eot|gif|ico)$/,
                 use: {
                     loader: "file-loader",
                     options: {
@@ -81,8 +85,10 @@ const config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
+            title: 'Bicycle'
             filename: "css/style.css"
         }),
+        new UglifyJSPlugin(),
         new HtmlWebpackPlugin({
             filename: './index.html',
             template: "./src/index.html"

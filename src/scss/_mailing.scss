@@ -1,0 +1,55 @@
+.mailing {
+    height: 265px;
+    width: 100%;
+    color: $white;
+
+    &__img {
+        height: 115px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__h5 {
+        font: $base-font;
+        size: 24px;
+        font-style: italic;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: #848789;
+    }
+
+    &__form_1 {
+        height: 95px;
+        width: 570px;
+        border: 2px #d3d7d9;
+        outline: none;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none; 
+        cursor: pointer;
+        font-size: 20px;
+        font-family: $base-font;
+        padding: 40px 10px;
+        color: #fff;
+    }
+
+    &__form_2 {
+        height: 95px;
+        width: 150px;
+        border: none;
+        outline: none;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none; 
+        cursor: pointer;
+        font-size: 24px;
+        font-family: $base-font;
+        color: #fff;
+        padding: 40px 10px;
+        color: #64c29e;
+    }
+}

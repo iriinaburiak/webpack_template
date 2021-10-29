@@ -1,0 +1,84 @@
+.shop {
+
+    .col {
+
+        &__link {
+
+            &:hover {
+
+                .col__icon--hidden {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__icon--hidden {
+            color: $white;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2.3px;
+
+            &.centered {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.reviews {
+    padding: 120px 0 65px;
+
+    &__slider {
+        padding-bottom: 108px;
+
+        .swiper-pagination {
+            bottom: 0;
+
+            &-bullet {
+                width: 11px;
+                height: 11px;
+                border: 1px solid #c9c9c9;
+                background: none;
+                opacity: 1;
+
+                &-active {
+                    @extend .swiper-pagination-bullet;
+                    background: #a9afb3;
+                    border-color: #a9afb3;
+                }
+            }
+        }
+    }
+
+    &__twit {
+        margin: 0 0 10px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+
+
+        h4 {
+            color: $links-color;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 2.3px;
+            margin: 0 0 18px;
+
+            span {
+                font-weight: 300;
+                color: $font-color;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 34px;
+            font-style: italic;
+            max-width: 1060px;
+            margin: 0 auto;
+        }
+
+    }
+}

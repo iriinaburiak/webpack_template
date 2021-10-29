@@ -1,4 +1,9 @@
 @import 'variables';
+@import 'mixins';
+@import "node_modules/swiper/swiper-bundle.min";
 @import "base";
 @import 'header';
 @import 'main-banner';
+@import "shop";
+@import 'about';
+@import 'discover';

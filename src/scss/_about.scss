@@ -1,0 +1,25 @@
+.about {
+    height: 645px;
+    width: 100%;
+    background: $white;
+
+    &__h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: $base-font;
+        color: #000;
+        size: 18px;
+        text-decoration: overline;
+        margin-top: 20px;
+    }
+
+    &__p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: $base-font;
+        size: 18px;
+        margin-top: 20px;
+    }
+}

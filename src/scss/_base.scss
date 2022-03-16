@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto+Slab&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-transform: uppercase;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    text-transform: uppercase;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    text-transform: uppercase;
+}
+:-moz-placeholder { /* Firefox 18- */
+    text-transform: uppercase;
 }
 
 ul {
@@ -16,13 +29,14 @@ img {
 }
 
 body {
-    font: 400 16px/30px $base-font;
+    font: 400 14px/1.25 $font-roboto;
     color: $font-color;
 }
 
 a {
     text-decoration: none;
-    color: $links-color;
+    color: #000;
+    cursor: pointer;
 }
 
 input {
@@ -33,134 +47,184 @@ table {
     border-collapse: collapse;
 }
 
+section {
+    padding: 92px 0;
+}
+
 .wrapper {
     overflow: hidden;
+    position: relative;
 }
 
 .container {
-    max-width: 1630px;
+    max-width: 1170px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.main-title {
+    font-size: 20px;
+    font-family: $font-montserrat;
+    font-weight: 400;
+    color: $font-color;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 27px;
+    margin-bottom: 23px;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 25px);
+        width: 50px;
+        height: 2px;
+        background-color: $font-color; 
+    }
+}
+.main-description {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 71px;
+
+    @include screen(992) {
+        padding: 15px 0;
+    }
+}
+
+.main-button {
+    border: 2px solid $font-color-banner;
+    border-radius: 2px;
+    font: 400 16px/1.5 $font-montserrat;
+    color: $font-color-banner;
+    width: 180px;
+    padding: 11px 0;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0);
+    transition: .5s;
+
+    &:hover {
+        background: $font-color-banner;
+        color: $red;
+    }
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-}
 
-.centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.col {
-    flex-shrink: 0;
-    flex-grow: 1;
-    position: relative;
-    overflow: hidden;
-    min-height: 267px;
-
-    &__background {
-        position: absolute;
-        min-height: 102%;
-        min-width: 102%;
-        width: auto;
-        max-width: none;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    @include screen(768) {
+        flex-direction: column;
+        align-items: center;
     }
 
-    &__icon {
-        position: relative;
-        z-index: 10;
+    .col-33 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.3%;
+        flex-shrink: 0;
 
-        &--hidden {
-            @extend .col__icon;
-            opacity: 0;
-            transition: .3s;
-            background-color: rgba(100, 194, 158, 0.8);
-            position: absolute;
-            left: 0;
-            top: 0;
+        @include screen(768) {
             width: 100%;
-            height: 100%;
-            z-index: 10;
-        }
-    }
+            padding-bottom: 10px;
 
-    &__link {
-        display: block;
-    }
-
-    &__text {
-        padding: 70px 65px 85px;
-        background: $white;
-        text-align: center;
-        position: relative;
-
-        &:after {
-            content: '';
-            position: absolute;
-            left: calc(50% - 10px);
-            top: 100%;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 10px 10px 0 10px;
-            border-color: $white transparent transparent transparent;
-            z-index: 1;
-        }
-
-        p {
-            text-align: justify;
-            position: relative;
-
-            &:after {
-                content: '';
-                width: 50px;
-                height: 1px;
-                position: absolute;
-                left: calc(50% - 25px);
-                bottom: -32px;
-                background-color: rgba(53, 55, 56, 0.2);
+            &:last-child {
+                padding-bottom: 0;
             }
         }
     }
 
-    &__static-img {
-        height: 200px;
-        position: relative;
-        overflow: hidden;
-    }
+    .col-50 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        flex-shrink: 0;
 
-    &--fullheight {
-        @extend .col;
-
-        .row {
-            height: 100%;
+        @include screen(768) {
+            width: 100%; 
         }
     }
 }
 
-.col-100 {
-    @extend .col;
-    width: 100%;
+.title-14 {
+    font-family: $font-montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
 }
 
-.col-66 {
-    @extend .col;
-    width: 66.7%;
+.red {
+    color: $red;
 }
 
-.col-50 {
-    @extend .col;
-    width: 50%;
-}
+.form {
 
-.col-33 {
-    @extend .col;
-    width: 33.3%;
+    input[type='text'],
+    input[type='email'],
+    textarea,
+    .button-dark {
+        border: 1px solid $font-color;
+        height: 44px;
+        padding: 5px 15px;
+        outline: none;
+        font-size: 12px;
+        width: 100%;
+        font-family: $font-roboto;
+
+        &:focus {
+            border-color: $red;
+        }
+    }
+
+    textarea {
+        height: 104px;
+        resize: vertical;
+    }
+
+    .button-dark {
+        text-align: center;
+        transition: .3s;
+        text-transform: uppercase;
+        max-width: 170px;
+        background: $white;
+
+        &:hover {
+            background: $red;
+            border-color: $red;
+            color: $white;
+        }
+    }
+
+    &__row {
+        margin: 0 0 20px;
+    }
+
+    &__group {
+        @extend .form__row;
+        display: flex;
+        justify-content: space-between;
+
+        input[type='text'],
+        input[type='email'] {
+            width: calc(50% - 15px);
+        }
+    }
+
+    &__footer {
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .button-dark {
+            margin-right: 38px;
+        }
+    }
 }

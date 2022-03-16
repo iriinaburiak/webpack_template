@@ -3,254 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Bicycle</title>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Startup</title>
 </head>
 <body>
-    <div class="wrapper">
-        <section id="banner" class="banner">
-            <header class="header">
-                <div class="container">
-                    <a href="#" class="navigation__logo-mobile">
-                        <img src="./images/logo.png" alt="Bicycle logo">
-                    </a>
-                    <span class="header__mobile-menu">
-                        <img src="./images/menu.png" alt="menu">
+<div class="wrapper">
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">Startup</a>
+            <nav class="navigation">
+                <div class="navigation-wrapper">
+                    <ul class="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <span class="close-menu">
+                        <img src="./images/cancel.png" alt="menu icon">
                     </span>
-                    <nav class="navigation">
-                        <ul class="navigation__left">
-                            <li>
-                                <a href="#about">About us</a>
-                            </li>
-                            <li>
-                                <a href="#work">Work</a>
-                            </li>
-                        </ul>
-                        <a href="#" class="navigation__logo">
-                            <img src="./images/logo.png" alt="Bicycle logo">
-                        </a>
-                        <ul class="navigation__right">
-                            <li>
-                                <a href="#shop">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <span class="navigation__close"></span>
-                    </nav>
                 </div>
-            </header>
+                <span class="menu-button">
+                    <img src="./images/menu.png" alt="menu icon">
+                </span>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="home" class="home main-banner" style="background-image: url('./images/inline/banner.jpg');">
+            <div class="container main-banner__container">
+                <h3 class="main-banner__title3">Welcome to startup</h3>
+                <p class="main-banner__text">Your Favourite Creative Agency Template</p>
+                <div class="main-banner__button-wrapper">
+                    <button class="main-button" type="button">Get started</button>
+                </div>
+            </div>
         </section>
-        <section id="about">
-            <div class="container">
-                <a href="#" class="icon-mobile">
-                    <img src="./images/Icon.png" alt="icon">
-                </a>  
-                <h1>
-                    A NEW GENERATION OF VINTAGE BIKE
-                </h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        <section id="services" class="services">
+            <div class="container services__container">
+                <div class="section-header">
+                    <h4 class="main-title">Services</h4>
+                </div>
+                <p class="main-description">
+                    We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
                 </p>
-            </div>
-        </section>
-        <section id="work"xml:base="">
-            <div class="container">
                 <div class="row">
-                    <div class="col-66 centered">
-                        <img class="col__background" src="./images/work1.jpg" alt="work">
-                        <img class="col__icon" src="./images/icon1.png" alt="bike icon">
+                    <div class="col-33">
+                        <div class="services-icon">
+                            <img src="./images/services1.png" alt="services1">
+                        </div>
+                        <h4 class="services__col-33-title">Clean Typography</h4>
+                        <p class="services__col-33-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam 
+                            architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        </p>
                     </div>
                     <div class="col-33">
-                        <div class="col__text">
-                            <img src="./images/text-icon1.png" alt="icon">
-                            <h4>Vintage Oliva</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
-                            </p>
+                        <div class="services-icon">
+                            <img src="./images/services2.png" alt="services2">
                         </div>
-                        <div class="centered col__static-img">
-                            <img class="col__background" src="./images/work2.jpg" alt="image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row-2">
-                    <div class="col-33">
-                        <div class="col__text">
-                            <img src="./images/icon4.png" alt="icon">
-                            <h4>La Boriosa</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and
-                                 typesetting industry. Lorem Ipsum has been the industry's 
-                                 standard dummy text ever since the 1500s, when an unknown 
-                                 printer took a galley of type and scrambled it to make a 
-                                 type specimen book. It has survived.
-                            </p>
-                        </div>
-                        <div class="centered col__static-img">
-                            <img class="col__background" src="./images/work4.png" alt="image">
-                        </div>
-                    </div>
-                    <div class="col-66 centered">
-                        <img class="col__background" src="./images/work3.png" alt="work">
-                        <img class="col__icon" src="./images/Logo2.png" alt="bike icon">
-                    </div>
-                </div>
-                <div class="row-3">
-                    <div class="col-66 centered">
-                        <img class="col__background" src="./images/work5.png" alt="work">
-                        <img class="col__icon" src="./images/Logo5.png" alt="bike icon">
+                            <h4 class="services__col-33-title">Rock Solid Code</h4>
+                        <p class="services__col-33-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam 
+                            architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        </p>
                     </div>
                     <div class="col-33">
-                        <div class="col__text">
-                            <img src="./images/Icon6.png" alt="icon">
-                            <h4>retrò Bike - M. Hulot</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and
-                                 typesetting industry. Lorem Ipsum has been the industry's 
-                                 standard dummy text ever since the 1500s, when an unknown 
-                                 printer took a galley of type and scrambled it to make a 
-                                 type specimen book. It has survived.
-                            </p>
+                        <div class="services-icon">
+                            <img src="./images/services3.png" alt="services3">
                         </div>
-                        <div class="centered col__static-img">
-                            <img class="col__background" src="./images/work6.png" alt="image">
-                        </div>
+                        <h4 class="services__col-33-title">Expert Support</h4>
+                        <p class="services__col-33-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam 
+                            architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="shop">
-            <div class="container">
-                <div class="reviews">
-                    <div class="centered">
-                        <img class="reviews__twit" src="./images/twit.png" alt="Twitter">
+        <section id="about" class="about">
+            <div class="container about__container">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h4 class="main-title">About us</h4>
                     </div>
-                    <div class="swiper reviews__slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <h4>AOD New York @aod <span>/ 35 min</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>AOD New York @aod <span>/ 13 min</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>AOD New York @aod <span>/ 54 min</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>AOD New York @aod <span>/ 23 min</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h4>AOD New York @aod <span>/ 33 min</span></h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div class="shop">
+                    <p class="main-description">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                    </p>
                     <div class="row">
-                        <div class="col-33">
-                            <div class="row">
-                                <div class="col-50 centered">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop1.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-50">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop2.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
+                        <div class="col-50">
+                            <p class="col-50-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod 
+                                tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos 
+                                et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. 
+                                Lorem ipsum dolor sit amet. Lorem ipsum eat.</p>
+                        </div>
+                        <div class="col-50">
+                            <p class="col-50-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor 
+                                invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam 
+                                et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+                                Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor 
+                                sit amet. Lorem ipsum dolor et.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper swiper-about">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about1.jpg" alt="Md. Khalil Uddin">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-100">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop3.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="about__description">
+                                <h5>Md. Khalil Uddin</h5>
+                                <div class="about__position">Head of Ideas</div>
                             </div>
                         </div>
-                        <div class="col-33 col--fullheight">
-                            <div class="row">
-                                <div class="col-50">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop4.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-50">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop5.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about2.jpg" alt="Regina Phalange">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
                                 </div>
                             </div>
+                            <div class="about__description">
+                                <h5>Regina Phalange</h5>
+                                <div class="about__position">Interview Trainer</div>
+                            </div>
                         </div>
-                        <div class="col-33">
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about3.jpg" alt="Jed Mosley">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
+                                </div>
+                            </div>
+                            <div class="about__description">
+                                <h5>Jed Mosley</h5>
+                                <div class="about__position">Back-end Developer</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about4.jpg" alt="Rubel Miah">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
+                                </div>
+                            </div>
+                            <div class="about__description">
+                                <h5>Rubel Miah</h5>
+                                <div class="about__position">Lead WordPress Developer</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about5.jpg" alt="Shamim Mia">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
+                                </div>
+                            </div>
+                            <div class="about__description">
+                                <h5>Shamim Mia</h5>
+                                <div class="about__position">Sr. Web Developer</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about6.jpg" alt="John Doe">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
+                                </div>
+                            </div>
+                            <div class="about__description">
+                                <h5>John Doe</h5>
+                                <div class="about__position">Front-end Developer</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="about__photo">
+                                <img src="./images/about7.jpg" alt="Robin Sparkles">
+                                <div class="about__socials">
+                                    <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+                                    <a href="#"><img src="./images/twitter.png" alt="twitter"></a>
+                                    <a href="#"><img src="./images/googleplus.png" alt="googleplus"></a>
+                                    <a href="#"><img src="./images/linkedin.png" alt="linkedin"></a>
+                                </div>
+                            </div>
+                            <div class="about__description">
+                                <h5>Robin Sparkles</h5>
+                                <div class="about__position">Designer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="works">
+            <div class="container works__container">
+                <div class="section-header">
+                    <h4 class="main-title">Latest works</h4>
+                </div>
+                <div class="tabs">
+                    <div class="tabs__buttons">
+                        <span class="tabs__button">All</span>
+                        <span class="tabs__button">Branding</span>
+                        <span class="tabs__button">Design</span>
+                        <span class="tabs__button">Development</span>
+                        <span class="tabs__button">Strategy</span>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__item" alt="All">
                             <div class="row">
-                                <div class="col-100"><a href="#" class="col__link">
-                                    <img class="col__background" src="./images/shop6.jpg" alt="shop">
-                                    <div class="col__icon--hidden centered">
-                                        <img src="./images/icon-1.png" alt="bike icon">
-                                        <div>Shop now</div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work1.jpg" alt="branding development"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
                                     </div>
-                                </a></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-50">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop7.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
                                 </div>
-                                <div class="col-50">
-                                    <a href="#" class="col__link">
-                                        <img class="col__background" src="./images/shop8.jpg" alt="shop">
-                                        <div class="col__icon--hidden centered">
-                                            <img src="./images/icon-1.png" alt="bike icon">
-                                            <div>Shop now</div>
-                                        </div>
-                                    </a>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work2.jpg" alt="design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work3.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work4.jpg" alt="branding design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work5.jpg" alt="branding"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work6.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work7.jpg" alt="design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work8.jpg" alt="design strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work9.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" alt="Branding">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work1.jpg" alt="branding development"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work4.jpg" alt="branding design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work5.jpg" alt="branding"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" alt="Design">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work2.jpg" alt="design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work4.jpg" alt="branding design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work7.jpg" alt="design"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work8.jpg" alt="design strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" alt="Development">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work1.jpg" alt="branding development"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work3.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work6.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work9.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" alt="Strategy">
+                            <div class="row">
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work3.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work6.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work8.jpg" alt="design strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-33">
+                                    <div class="works__image"><img src="./images/work9.jpg" alt="development strategy"></div>
+                                    <div class="works__description">
+                                        <h6>Product</h6>
+                                        <span>Description</span>
+                                        <a href="#">View <span></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -258,56 +454,171 @@
                 </div>
             </div>
         </section>
-        <section id="discover">
-            <div class="container">
-              <form>
-                  <button>DISCOVER THE SHOP</button>
-              </form>  
-            </div>
-        </section>
-        <section id="mailing">
-            <div class="container">
-                <a href="#" class="navigation__logo">
-                    <img src="./images/logo.png" alt="Bicycle logo">   
-                <h5>Stay on the saddle!</h5> 
-                <form id="form_1">
-                    <input name="input" type="text" placeholder="enter your email... ">
-                </form> 
-                <form id="form_2">
-                    <button type="submit">GO</button>
-                </form>
-            </div>
-        </section>
-        <section id="footer">
-            <div class="container">
-                <div id="nav">
-                    <h4>AOD New York
-                        2250 Lexington Avenue 
-                        New York, NY 10035  - info@domain.com
-                    </h4>
-                </div>
-                <div id="aside">
-                    <h6>
-                        Handcrafted by
-                    </h6>
-                    <a href="#" class="icon4">
-                        <img src="./images/logo6.png" alt="icon">
-                    </a> 
-                </div>
-                <div id="content"> 
-                    <a href="#" class="icon1">
-                        <img src="./images/twit.png" alt="icon">
-                    </a> 
-                    <a href="#" class="icon2">
-                        <img src="./images/face.png" alt="icon">
-                    </a> 
-                    <a href="#" class="icon2">
-                        <img src="./images/pin.png" alt="icon">
-                    </a> 
+        <section id="paralax" class="paralax" style="background-image: url('./images/inline/paralax.jpg');">
+            <div class="paralax__header">
+                <h4 class="paralax__title">
+                    Do you like <span>our work</span> so far?<br>
+                    Let's talk about <span>your project</span>!
+                </h4>
+                <div class="paralax__button-wrapper">
+                    <button class="main-button" type="button">Get in touch</button>
                 </div>
             </div>
         </section>
-    </div>
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h4 class="main-title">Recent blog posts</h4>
+                </div>
+                <p class="main-description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                </p>
+                <div class="blog__list">
+                    <div class="blog__item">
+                        <div class="blog__image">
+                            <img src="./images/blog1.jpg" alt="Startup ideas needs to be funded">
+                        </div>
+                        <div class="blog__description">
+                            <div class="blog__item-header">
+                                <div class="blog__date">
+                                    18 <span>oct</span>
+                                </div>
+                                <div class="blog__title">
+                                    <a href="#">Startup ideas needs to be funded</a>
+                                    <div>
+                                        By <a href="#">Khalil</a> Uddin in <a href="#">Development</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="blog__preview">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam
+                            </p>
+                            <a href="#" class="blog__link">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__image">
+                            <img src="./images/blog2.jpg" alt="User Interface Designing Elements">
+                        </div>
+                        <div class="blog__description">
+                            <div class="blog__item-header">
+                                <div class="blog__date">
+                                    18 <span>oct</span>
+                                </div>
+                                <div class="blog__title">
+                                    <a href="#">User Interface Designing Elements</a>
+                                    <div>
+                                        By <a href="#">Khalil</a> Uddin in <a href="#">Development</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="blog__preview">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam
+                            </p>
+                            <a href="#" class="blog__link">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" class="clients">
+            <div class="container">
+                <ul class="clients__logos">
+                    <li><img src="./images/client1.png" alt="Deorham"></li>
+                    <li><img src="./images/client1.png" alt="Deorham"></li>
+                    <li><img src="./images/client1.png" alt="Deorham"></li>
+                    <li><img src="./images/client1.png" alt="Deorham"></li>
+                    <li><img src="./images/client1.png" alt="Deorham"></li>
+                </ul>
+                <div class="swiper clients__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>
+                                Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                            </p>
+                            <div class="clients__swiper-autor">
+                                John Doe, Google Inc.
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>
+                                Architecto assumenda beatae blanditiis fuga, incidunt nemo pariatur quisquam velit! Aperiam asperiores debitis illum maxime molestiae nesciunt pariatur unde? Accusantium aspernatur, at blanditiis dicta doloremque ex expedita iusto perspiciatis. Aut cumque facilis temporibus. Alias animi doloribus eaque, facere illum impedit laborum, praesentium quam, repudiandae saepe sed sint suscipit temporibus unde ut! A blanditiis consequatur consequuntur cum cumque eligendi illo iure, iusto magnam mollitia quae qui repellat reprehenderit tempora tempore vitae voluptate voluptatem?
+                            </p>
+                            <div class="clients__swiper-autor">
+                                Ylon Mask, Tesla Inc.
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab consectetur consequatur cumque dolore eos esse et excepturi exercitationem expedita explicabo ipsa laboriosam.
+                            </p>
+                            <div class="clients__swiper-autor">
+                                Ivan Ivanov, Ivanov Inc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h4 class="main-title">Get in touch</h4>
+                </div>
+                <p class="main-description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                </p>
 
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <img src="./images/fa-map-marker.png" alt="marker">
+                            <h5 class="title-14">Address</h5>
+                            <div>312, 7th Ave, New York</div>
+                            <div>NY 101200, United States of America</div>
+                        </div>
+                        <div class="contact__info-item">
+                            <img src="./images/fa-mobile-phone.png" alt="phone">
+                            <h5 class="title-14">hotline (24X7)</h5>
+                            <div><a href="tel:+650052300">+65 0052 300</a>, <a href="tel:+6588251210">+65 88251 210</a></div>
+                            <div><a href="tel:+8801723511340">+88 01723 511 340</a></div>
+                        </div>
+                        <div class="contact__info-item">
+                            <img src="./images/fa-letter.png" alt="email">
+                            <h5 class="title-14">E-mail</h5>
+                            <div><a href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a></div>
+                            <div><a href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <form class="contact__form form">
+                        <div class="form__group">
+                            <input type="text" name="Name" placeholder="Your name">
+                            <input type="email" name="Email" placeholder="Your E-mail">
+                        </div>
+                        <div class="form__group">
+                            <input type="text" name="Subject" placeholder="Your subject">
+                            <input type="text" name="Company_name" placeholder="Company name">
+                        </div>
+                        <div class="form__row">
+                            <textarea name="Message" placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="form__footer">
+                            <input type="submit" class="button-dark" value="Send message">
+                            <p>
+                                <span class="red">* </span>
+                                We’ll contact you as as possible. We don’t reply on Monday.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
 </body>
 </html>

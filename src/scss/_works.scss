@@ -1,0 +1,141 @@
+.works {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 90px 0 85px;
+
+        @include screen(992) {
+            padding: 25px 0;
+        }
+    }
+
+    &__image {
+        position: relative;
+        height: 320px;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            min-height: 100%;
+            min-width: 100%;
+            z-index: 1;
+        }
+    }
+
+    .tabs {
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 47px;
+
+            @include screen(992) {
+                margin-bottom: 10px;
+            }
+
+            @include screen(600) {
+                flex-wrap: wrap;
+            }
+        }
+    
+        &__button {
+            font-size: 16px;
+            font-family: $font-roboto;
+            padding: 5px 14px;
+            cursor: pointer;
+    
+            &.active {
+                color: $red;
+            }
+        }
+    
+        &__item {
+            display: none;
+
+            .col-33 {
+                display: block;
+                position: relative;
+                width: calc(33.3% - 30px);
+                margin: 15px;
+
+                &:hover {
+
+                    .works__description {
+                        opacity: 1;
+                    }
+                }
+
+                @include screen(1224) {
+                    width: calc(50% - 30px);
+                    overflow: hidden;
+                }
+                @include screen(768) {
+                    width: calc(100% - 30px);
+                    margin: 5px 15px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    &__description {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $font-color-banner;
+        padding: 20px;
+        background: rgba(192, 48, 28, .7);
+        text-align: center;
+        opacity: 0;
+        transition: .3s;
+
+        h6 {
+            font-family: $font-montserrat;
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+
+        span {
+            font-size: 12px;
+            margin: 0 0 20px;
+        }
+
+        a {
+            background: $font-color-banner;
+            transition: .3s;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $red;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            line-height: 1;
+
+            &:hover {
+                background: rgba(255,255,255,.85);
+            }
+
+            span {
+                display: inline-block;
+                width: 6px;
+                height: 10px;
+                vertical-align: top;
+                background: url("../images/arrow.png") no-repeat 50%;
+                background-size: 100% 100%;
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+}
